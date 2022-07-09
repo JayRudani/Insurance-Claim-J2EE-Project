@@ -14,7 +14,7 @@ public class DB {
 		if(conn == null || conn.isClosed()) {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			conn = DriverManager.getConnection(
-	                "jdbc:mysql://localhost:3306/project_jayrudani", "root", "Rudanijay@98");
+	                "jdbc:mysql://localhost:3306/project_jayrudani", "root", <password>);
 		}
 		return conn;
 	}
